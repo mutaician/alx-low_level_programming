@@ -3,7 +3,7 @@
 /**
  * main - Prints all numbers of base 16
  *
- * return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
