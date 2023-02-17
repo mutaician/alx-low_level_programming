@@ -1,29 +1,49 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible combinations
+ * main - Prints numbers between 00 to 99.
  *
- * Return: Always 0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int a, b;
+int i, e, g, h, op1, op2;
 
-	for (a = 0; a <= 98; a++)
+i = e = g = h = 48;
+while (h < 58)
+{
+	g = 48;
+	while (g < 58)
 	{
-		for (b = 0; b <= 99; b++)
+		e = 48;
+		while (e < 58)
 		{
-			putchar((a / 10) + '0');
-			putchar((a % 10) + '0');
-			putchar(' ');
-			putchar((b / 10) + '0');
-			putchar((b % 10) + '0');
-			if (a == 98 && b == 99)
-				continue;
-			putchar(',');
-			putchar(' ');
+			i = 48;
+			while (i < 58)
+			{
+				op1 = (h * 10) + g;
+				op2 = (e * 10) + i;
+				if (op1 < op2)
+				{
+					putchar(h);
+					putchar(g);
+					putchar(' ');
+					putchar(e);
+					putchar(i);
+					if (h == 57 && g == 56 && e == 57 && i == 57)
+						break;
+					putchar(',');
+					putchar(' ');
+				}
+				i++;
+			}
+			e++;
 		}
+		g++;
 	}
-	putchar('\n');
-	return (0);
+	h++;
 }
+putchar('\n');
+return (0);
+}
+
