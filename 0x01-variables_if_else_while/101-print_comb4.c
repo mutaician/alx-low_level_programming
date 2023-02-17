@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Prints all possible combinations of three different digits,
- *        in ascending order, separated by a comma followed by a space.
+ * main - Prints all possible combinations of three different digits
  *
- * Return: Always 0.
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -22,7 +21,6 @@ int main(void)
 
 				if (digit1 == 7 && digit2 == 8 && digit3 == 9)
 					continue;
-				
 				putchar(',');
 				putchar(' ');
 			}
@@ -30,6 +28,5 @@ int main(void)
 	}
 
 	putchar('\n');
-
 	return (0);
 }
