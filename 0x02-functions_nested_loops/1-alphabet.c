@@ -4,6 +4,8 @@
  * main - prints alphabet in lower case
  *
  * Return: Always 0
+ *
+ * print_alphabet
  */
 void print_alphabet(void)
 {
