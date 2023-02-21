@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <main.h>
 
 /**
  * main - prints _putchar
@@ -10,7 +11,7 @@ int main(void)
 	char *sh = "_putchar";
 	while (*sh)
 	{
-		write(*sh);
+		_putchar(*sh);
 		sh++;
 	}
 	_putchar('\n');
