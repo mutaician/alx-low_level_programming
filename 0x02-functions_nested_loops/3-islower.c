@@ -1,11 +1,13 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main -checks for lowercase character
+ * _islower - checks for lowercase character
+ *
+ *@c: character in ASCII  code
  *
  * Return: 1 for lowercase and 0 for the rest
  */
-int main(void)
+int _islower(int c)
 {
 	char c;
 
