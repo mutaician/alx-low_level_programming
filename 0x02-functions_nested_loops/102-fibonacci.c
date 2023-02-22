@@ -7,11 +7,12 @@
  */
 int main(void)
 {
-	int i, n = 50, t1 = 1, t2 = 2, nt;
+	int i;
+	long int t1 = 1, t2 = 2, nt;
 
-	for (i = 1; i <= n; i++)
+	for (i = 1; i <= 50; i++)
 	{
-		printf("%d, ", t1);
+		printf("%ld, ", t1);
 		nt = t1 + t2;
 		t1 = t2;
 		t2 = nt;
