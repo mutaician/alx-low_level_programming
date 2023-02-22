@@ -17,6 +17,5 @@ int main(void)
 		t1 = t2;
 		t2 = nt;
 	}
-	printf("\n");
 	return (0);
 }
