@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * leet - encodes a string
+ * leet - encodes a string into 1337
  * @s: input string
- * Return:
+ * Return: the pointer te dest
  */
 char *leet(char *s)
 {
@@ -17,7 +17,7 @@ char *leet(char *s)
 		{
 			if (*(s + count) == low_letters[i] || *(s + count) == upp_letters[i])
 			{
-				*(s +count) = numbers[i];
+				*(s + count) = numbers[i];
 				break;
 			}
 		}
