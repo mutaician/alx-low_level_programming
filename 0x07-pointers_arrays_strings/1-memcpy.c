@@ -4,8 +4,8 @@
  * _memcpy - copies memory area
  * @dest: destination
  * @src: source
- * @n: integer 
- * Return: a pointer to a destination
+ * @n: integer
+ * Return: a pointer to destination
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
@@ -14,5 +14,5 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 
 	while (n--)
 		*p_dest++ = *p_src++;
-	return dest;
+	return (dest);
 }
