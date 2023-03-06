@@ -7,22 +7,26 @@
  * Return: no of bytes
  */
 unsigned int _strspn(char *s, char *accept)
-{
-	unsigned int i, j;
-
-	for (i = 0; s[j] != '\0'; j++)
 	{
-		for (j = 0; accept[j] != '\0'; j++)
+	unsigned int bytes = 0;
+	int index;
+
+	while (*s)
+	{
+		for (index = 0; accept[index]; index++)
 		{
-			if (s[i] == accept[j])
+			if (*s == accept[index])
 			{
+				bytes++;
 				break;
 			}
+
+			else if (accept[index + 1] == '\0')
+				return (bytes);
 		}
-		if (accept[j] == '\0')
-		{
-			return (i);
-		}
+
+		s++;
 	}
-	return (i);
+
+	return (bytes);
 }
