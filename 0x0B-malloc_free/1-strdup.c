@@ -5,7 +5,7 @@
  * @str: string
  * Return: pointer to an array of chars
  */
-char *strdup(char *str)
+char *_strdup(char *str)
 {
 	char *strout;
 	unsigned int i, j;
